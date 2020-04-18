@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Information - </title>
+    <script src="info.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel='stylesheet' href='normalize.css' type='text/css' media='screen'>
+</head>
+<body>  
+    <div class="container">
+        <header>
+            <img src="picture/sami.jpg" alt="No Picture" width=100 height=100 />
+            <span>GeorGe Online Book Store</span>
+        </header>
+
+        
+        <aside>
+            <nav>
+                <ul>           
+                    <button> <a href="Page1.html">Welcome Page</a></button> 
+                    <button> <a href="#">To Contact</a> </button> 
+                </ul>
+            </nav>
+        </aside>
+
+
+        <main>
+            <div>
+               <center>           <h4>Registration </h4>  </center>          
+         
+            <form action="https://httpbin.org/post" method="POST" name="signup" id="reg" onsubmit="return validateForm()" >
+                <h2 id="formName">Sign up</h2>
+                <div>
+                <center>    <label for="fname" title="First name must start with a cap and alphabet are allowed only.">First name: </label>  </center>  
+                <center>    <input type="text" name="entry1" id="fname" required /> </center>
+                </div>
+                <div>
+              <center>      <label for="lname" title="Last name must start with a cap and alphabet are allowed only.">Last name: </label>
+              <center>      <input type="text" name="entry2" id="lname" required /> </center>
+                </div>
+                <div>
+            <center>        <label for="password1" title=":must be upto 6 characters long, must begin with a character, must include
+                    at least 1 digit and 1 uppercase only.">Password: </label>
+          <center>          <input type="password" name="entry3" id="password1" required />   </center>
+                </div>
+                <div>
+                 <center>   <label for="password2" title="the password must match together.">Enter again: </label>  </center>
+               <center>     <input type="password" name="entry4" id="password2" required />  </center>
+                </div>
+                <div>
+            <center>        <label for="username" title="The username must start with a character, must not be less than 6. ">Username: </label> </center>
+          <center>          <input type="text" name="entry5" id="username" required />   </center>
+                </div>
+                <div> 
+         <center>           <label for="education" title="Please select the type of book you are looking for : ">Book level: </label>  </center>
+         <center>           <select name="entry6" id="Book" required>   <center>
+            <center>            <option value="" selected>  - select - </option>   </center>
+          <center>              <option value="1"> Novels </option>   </center>
+            <center>            <option value="2">  Short Stories</option>   </center>
+            <center>            <option value="3"> Fantasy Stories </option>   </center>
+            <center>            <option value="4"> Drama Literature </option>   </center>
+               </center>         <option value="5"> Others </option> </center>
+                    </select>
+                </div>
+                <div>
+<br>
+   <center>                 Marriage Status: <center><br>
+        <center>          <input type="radio" name="entry7" id="Marriage Status1" />  
+                  <label for="Marriage Status1" title="Single">Single</label><br>  
+           <input type="radio" name="entry7" id="Marriage Status2" />   
+            <label for="Marriage Status2" title="Married">Married</label><br>  
+          <input type="radio" name="entry7" id="Marriage Status3" />  
+          <label for="Marriage Status3" title=" Others"> Others</label><br>  </center>
+                </div>
+                <div>
+                <center>             <label for="email" title="email format">Email: </label>  </center>          
+             <center>                 <input type="email" name="entry8" id="email" required> </center>          
+                </div>
+                <div>
+             <center>                 <label for="age" title="age">Age: </label>  </center>          
+              <center>                <input type="text" name="entry9" id="age" required>  </center>          
+                </div>
+                <div>
+                 <center>             <input type="hidden" name="lastName" id="lastName" value="George" />  </center>          
+                <center>              <input type="hidden" name="studentId" id="studentId" value="012067153" /> </center>          
+                </div>
+
+                <br>
+              <center>            <button type="submit" value="Submit"> Submit </button>&nbsp;&nbsp;&nbsp;&nbsp;         
+                          <button type="reset" value = "    Clear   " onclick="clearerrors()"> Reset </button> </center>          
+            </form>
+        </main>
+      
+        <section>
+            <h4><center>Incorrect Entry</center> </h4>
+            <div id="error1"></div>
+            <div id="error2"></div>
+            <div id="error3"></div>
+            <div id="error4"></div>
+            <div id="error5"></div>
+            <div id="error6"></div>
+            <div id="error7"></div>
+        </section>
+
+
+
+        <div class=clear></div>
+        <footer>
+            <p class="center">&copy; 2020 Leonaire George</p> 
+<p>Contact information: <a href="mailto:someone@example.com">someone@example.com</a>.</p>
+        </footer>
+  </div>
+</body>
+</html>
